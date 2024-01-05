@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+   <link rel="stylesheet" href="style.css" />
+    <style>#food {
+  padding: 5rem 0 10rem 0;
+}
+
+#food h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  color: #555;
+}
+
+.food-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.food-container img {
+  display: block;
+  width: 100%;
+  margin: auto;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.img-container {
+  margin: 0 1rem;
+  position: relative;
+}
+
+.img-content {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  z-index: 2;
+  text-align: center;
+  transition: all 0.3s ease-in-out 0.1s;
+}
+
+.img-content h3 {
+  color: #fff;
+  font-size: 2.2rem;
+}
+
+.img-content a {
+  font-size: 1.2rem;
+}
+
+.img-container::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.871);
+  opacity: 0;
+  z-index: 1;
+
+  transform: scaleY(0);
+  transform-origin: 100% 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.img-container:hover::after {
+  opacity: 1;
+  transform: scaleY(1);
+}
+
+.img-container:hover .img-content {
+  opacity: 1;
+  top: 40%;
+  }
+  /* .........../Food Menu/............ */
+
+.food-menu-heading {
+  text-align: center;
+  font-size: 3.4rem;
+  font-weight: 400;
+  color: #666;
+}
+
+.food-menu-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 0px 30px 0px;
+}
+
+.food-menu-container img {
+  display: block;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.food-menu-item {
+  display: flex;
+  flex: 1 1 600px;
+  justify-content: space-evenly;
+  margin-bottom: 3rem;
+}
+
+.food-description {
+  margin: auto 1.5rem;
+}
+
+.font-title {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #444;
+}
+
+.food-description p {
+  font-size: 1.4rem;
+  color: #555;
+  font-weight: 500;
+}
+
+.food-description .food-price {
+  color: #117964;
+  font-weight: 700;
+}
+}</style>
+</head>
+<body>
+    <section id="food-menu">
+      <h2 class="food-menu-heading">Food Menu</h2>
+      <div class="food-menu-container container">
+        <div class="food-menu-item">
+          <div class="food-img">
+            <img src="https://t4.ftcdn.net/jpg/04/36/36/57/240_F_436365754_z3i5Es0sFmZuLY6GZIzdiU01v9HqpGZe.jpg" alt="" />
+          </div>
+          <div class="food-description">
+            <h2 class="food-titile">Chicken Biriyani</h2>
+            <p>
+
+Chicken Biryani is a South Asian delight featuring marinated chicken and fragrant basmati rice, slow-cooked with a blend of spices. Garnished with fried onions and herbs, it's a flavorful and beloved dish for any occasion.
+            </p>
+            <p class="food-price">Price: &#8377; 250</p>
+          </div>
+        </div>
+
+        <div class="food-menu-item">
+          <div class="food-img">
+            <img
+              src="https://t3.ftcdn.net/jpg/00/85/26/54/240_F_85265491_rxJ3FZRTuQtfNC9ztaLecVjdwOZtp5EW.jpg"
+              alt="error"
+            />
+          </div>
+          <div class="food-description">
+            <h2 class="food-titile">Beef Biriyani</h2>
+            <p>
+
+Beef Biryani is a South Asian delight that combines tender beef, aromatic basmati rice, and a blend of spices. Marinated and slow-cooked, this dish offers a rich and flavorful experience, garnished with fried onions and herbs for added depth. It's a hearty and satisfying choice for those who appreciate the savory essence of beef in biryani
+            </p>
+            <p class="food-price">Price: &#8377; 250</p>
+          </div>
+        </div>
+        <div class="food-menu-item">
+          <div class="food-img">
+            <img src="https://t4.ftcdn.net/jpg/04/15/97/41/240_F_415974134_fUfie2ITvn4LkBpBXb7vfOKPg0Yqyr2U.jpg" alt="" />
+          </div>
+          <div class="food-description">
+            <h2 class="food-titile">Mutton Biriyani</h2>
+            <p>
+
+Mutton Biryani is a South Asian delight that brings together tender mutton, aromatic basmati rice, and a blend of spices. Marinated and slow-cooked, it offers a rich and flavorful experience, garnished with fried onions and herbs for added delight.
+            </p>
+            <p class="food-price">Price: &#8377; 250</p>
+          </div>
+        </div>
+        <div class="food-menu-item">
+          <div class="food-img">
+            <img src="https://t4.ftcdn.net/jpg/03/56/29/75/240_F_356297592_AOPyBhHdDGwud1Bj3juy27flJi9VKWbK.jpg" alt="" />
+          </div>
+          <div class="food-description">
+            <h2 class="food-titile">Fish biriyani</h2>
+            <p>
+
+Fish Biryani is a South Asian specialty that blends tender fish, fragrant basmati rice, and spices. Marinated and slow-cooked, it offers a delicious and aromatic twist to traditional biryani, served with herbs and raita for a delightful meal.
+            </p>
+            <p class="food-price">Price: &#8377; 250</p>
+          </div>
+        </div>
+          </div>
+    </section>
+</body>
+</html>
